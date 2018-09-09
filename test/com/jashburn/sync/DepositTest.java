@@ -18,7 +18,7 @@ public class DepositTest {
 
 	@Test
 	public void testExecute() {
-		Deposit depositCmd = new Deposit(toAcct, 50.0);
+		Payment depositCmd = new Deposit(toAcct, 50.0);
 		assertEquals(0.0, toAcct.getBalance(), 0.0);
 
 		depositCmd.execute();

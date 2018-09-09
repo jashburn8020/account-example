@@ -23,7 +23,7 @@ public class TransferTest {
 		fromAcct.add(70.0);
 		toAcct.add(10.0);
 
-		Transfer transferCmd = new Transfer(fromAcct, toAcct, 15.0);
+		Payment transferCmd = new Transfer(fromAcct, toAcct, 15.0);
 		transferCmd.execute();
 		assertEquals(55.0, fromAcct.getBalance(), 0.0);
 		assertEquals(25.0, toAcct.getBalance(), 0.0);

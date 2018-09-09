@@ -19,7 +19,7 @@ public class WithdrawTest {
 	@Test
 	public void testExecute() {
 		acct.add(50.0);
-		Withdraw withdrawCmd = new Withdraw(acct, 30.0);
+		Payment withdrawCmd = new Withdraw(acct, 30.0);
 		assertEquals(50.0, acct.getBalance(), 0.0);
 
 		withdrawCmd.execute();
